@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg-deep: #0a1a30;
+  --bg-bottom: #1a110a;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg-deep);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  color: #f7f4ef;
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  background:
+    radial-gradient(ellipse 100% 50% at 50% 100%, rgba(200, 90, 34, 0.12) 0%, transparent 60%),
+    linear-gradient(to bottom,
+      #0a1a30 0%,
+      #0c1828 30%,
+      #12131a 60%,
+      #1a110a 100%);
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .section-eyebrow {
+    @apply mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-accent sm:text-sm;
+  }
+
+  .section-title {
+    @apply max-w-4xl text-3xl font-semibold leading-tight tracking-tight text-stone-50 sm:text-5xl lg:text-6xl;
+  }
+
+  .section-copy {
+    @apply text-base leading-7 text-stone-300 sm:text-lg sm:leading-8;
+  }
+
+  .card-title {
+    @apply text-xl font-bold leading-snug tracking-[0.01em] text-stone-100 sm:text-2xl;
+  }
+
+  .meta-label {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-accent/80 sm:text-sm;
+  }
+
+  .tag-label {
+    @apply rounded-full border border-white/5 bg-white/5 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-stone-300 transition-colors duration-500;
+  }
+}
+
+::selection {
+  background: rgba(200, 120, 50, 0.35);
+  color: #ffffff;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
