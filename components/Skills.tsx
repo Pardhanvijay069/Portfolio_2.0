@@ -9,7 +9,7 @@ const skillCategories = [
   },
   {
     title: "Databases & Tools",
-    skills: ["SQL Server", "MySQL", "Postman", "Visual Studio"]
+    skills: ["SQL Server", "MySQL", "Visual Studio"]
   },
   {
     title: "Concepts & Security",
