@@ -13,7 +13,7 @@ const skillCategories = [
   },
   {
     title: "Concepts & Security",
-    skills: ["REST APIs", "MVC Architecture", "Microservices", "JWT Authentication", "RBAC", "Creative Coding"]
+    skills: ["REST APIs", "MVC Architecture", "RBAC", "Creative Coding"]
   }
 ];
 
